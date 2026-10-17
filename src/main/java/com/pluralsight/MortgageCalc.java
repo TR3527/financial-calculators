@@ -3,7 +3,10 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class MortgageCalc {
-    public static void main(String[] args) {
+    public static void run(){
+
+        //removed (String[] args) above so run() could work properly and connect to Main
+
         Scanner read = new Scanner(System.in);
 
         System.out.print("Enter loan amount: ");
@@ -17,11 +20,11 @@ public class MortgageCalc {
 
         int numOfMonthlyPayments = loanLife * 12;
         double annualInterestRate = interestRate / 100;
-        double monthlyInterestRate = annualInterestRate/12;
+        double monthlyInterestRate = annualInterestRate / 12;
         double powerVal = Math.pow(1 + monthlyInterestRate, numOfMonthlyPayments);
 
         //Monthly payment =  P × (i × (1 + i)^n) / ((1 + i)^n - 1)
-        double monthlyPayment = (loanAmount * monthlyInterestRate * powerVal) / ((powerVal)-1);
+        double monthlyPayment = (loanAmount * monthlyInterestRate * powerVal) / ((powerVal) - 1);
 
 
         //Total Interest
@@ -32,9 +35,6 @@ public class MortgageCalc {
         System.out.println("with a total interest of $" + interestTotal + ".");
 
         read.close();
-
-
-
 
 
 
