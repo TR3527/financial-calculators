@@ -31,7 +31,7 @@ public class Main {
         System.out.print("Which calculator would you like to access today? 1, 2 or 3?");
         int calcChoice = read.nextInt();
 
-       /*
+/*
         if (calcChoice == 1){
             MortgageCalc.run();
         }else if (calcChoice == 2){
@@ -41,6 +41,7 @@ public class Main {
         }else{
             System.out.println("Invalid input. Only pick options 1,2 or 3!");
         }
+
         */
 
 

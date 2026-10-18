@@ -3,7 +3,8 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class MortgageCalc {
-    public static void run(){
+    //public static void run(){
+    {
 
         //removed (String[] args) above so run() could work properly and connect to Main
 
@@ -34,7 +35,7 @@ public class MortgageCalc {
         System.out.println(loanLife + " years would have a $" + monthlyPayment + "/mo payment");
         System.out.println("with a total interest of $" + interestTotal + ".");
 
-        read.close();
+        // read.close(); in or out?
 
 
 
