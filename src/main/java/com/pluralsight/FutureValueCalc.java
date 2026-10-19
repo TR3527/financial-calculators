@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class FutureValueCalc {
 
-       // public static void run(){
+       public static void run(){
             //^^ add this when finished
-        public static void main(String[] args){
+        //public static void main(String[] args){
 
         Scanner read = new Scanner(System.in);
 
